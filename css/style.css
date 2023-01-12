@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Dream';
+    src: url(../fonts/Dream.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+:root {
+    --color0: #590222;
+    --color1: #A65D78;
+    --color2: #BF0A3A;
+    --color3: #050626;
+    --color4: #162059;
+
+    --font-text: Arial, Verdana, Helvetica, sans-serif;
+    --font-logo: 'Dream', cursive;
+    --font-primary: 'Bebas Neue', cursive; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(230, 211, 211);
+    font-family: var(--font-primary);   
+}
+
+header {
+    background-image: linear-gradient(to top, var(--color0), var(--color2)); 
+    min-height: 110px;
+    padding-top: 40px;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--font-logo);
+    font-size: 3em;
+    margin-top: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+nav {
+    background-color: var(--color0);
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1500em;
+}
+
+nav > a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    padding: 0px 50px;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+div {
+    margin: 0px;
+}
+
+div > img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    color: rgb(34, 33, 33);
+    margin: 20px 0px;
+}
+
+main section {
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+main .grid {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+main div {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main img {
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+main > button {
+    min-width: 226px;
+    min-height: 66px;
+    margin: 20px 0px;
+    border: 3px solid #BF0A3A;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgb(230, 211, 211);
+    color: black;
+    font-family: var(--font-primary);
+    font-size: 1.2500em;
+    transition-duration: .5s;
+}
+
+main > button:hover {
+    background-color: var(--color0);
+    border: var(--color0);
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    background-color: var(--color2);
+    padding: 10px;
+}
+
+footer > p {
+    color: white;
+    font-family: var(--font-text);
+    text-align: center;
+}
