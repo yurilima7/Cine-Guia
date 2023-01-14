@@ -68,6 +68,19 @@ nav > a:hover {
     color: var(--color1);
 }
 
+@media (max-width: 804px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    nav > a {
+        padding: 0px;
+    }
+}
+
 div {
     margin: 0px;
 }
